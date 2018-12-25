@@ -56,7 +56,7 @@ const calculator = () => {
     $input.value = validStr // 유효한 문자만 표시
 
     if (isValidExpression(valueArr, validStr)) { // 수식 및 괄호 유효성 검사
-      // result = eval(validStr)
+      result = eval(validStr)
 
       if (result === undefined) {
         result = 'Type your expression!'
